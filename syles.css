@@ -1,0 +1,86 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-image: url('./00_Imagenes/00_Fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* CSS HEADER */
+.encabezado-principal{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 40px 40px 0 40px;
+    height: 50px;
+    border-bottom: 2px solid gray;
+}
+
+.encabezado-principal nav{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.encabezado-principal img.icon-search{
+    width: 30px;
+    height: 30px;
+}
+
+.encabezado-principal img.icon-mountain{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+
+.encabezado-principal .menus{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+.encabezado-principal .menus li{
+    cursor: pointer;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    transition: border-color 1s;;
+}
+
+.encabezado-principal .menus li:hover{
+    border-color: red;
+}
+
+/* CSS SECTION MAIN */
+
+.section-main{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px;
+    padding: 20px 20px 20px 50px;
+}
+
+.section-main .tittle-main{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(92, 83, 83);
+}
+
+.section-main .tittle-parraf p{
+    text-align: justify;
+}
+
+/* CSS SECTION ABOUT AS*/
+
