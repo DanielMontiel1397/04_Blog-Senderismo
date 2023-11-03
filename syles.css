@@ -70,6 +70,7 @@ body{
     grid-template-columns: 1.5fr 1fr;
     gap: 10px;
     padding: 20px 20px 20px 50px;
+    margin-bottom: 100px;
 }
 
 .section-main .tittle-main{
@@ -83,4 +84,82 @@ body{
 }
 
 /* CSS SECTION ABOUT AS*/
+
+.section-aboutAs{
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section-aboutAs .more-details{
+    width: 900px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.1fr;
+    gap: 90px;
+    list-style: none;
+}
+
+.section-aboutAs .more-details li{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    cursor: pointer;
+    transition: border-color 2s;
+    border: 2px solid transparent;
+}
+.section-aboutAs .more-details li:hover{
+    border-color: #D6DBDF #AEB6BF #85929E #AEB6BF  ;
+}
+
+.section-aboutAs .more-details li .img-iconDestino{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.more-details .icon-destino{
+    width: 40px;
+    height: 40px;
+}
+
+
+.more-details .title-moreDetails{
+    margin: 10px 0 0;
+}
+
+.section-aboutAs .more-details li p{
+    margin: 10px;
+    text-align: justify;
+}
+
+.more-details .icon-masDetalles{
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+} 
+
+.section-aboutAs .more-details li a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(65, 59, 59);
+    margin-left: 10px;
+}
+
+
+/*SECTION TOURS */
+
+.section-tours {
+    text-align: center  ;
+}
+
+.section-tours .list_tours{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
