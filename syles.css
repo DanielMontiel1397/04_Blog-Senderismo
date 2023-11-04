@@ -6,6 +6,10 @@ body{
     background-repeat: no-repeat;
 }
 
+main{
+    width: 100%;
+}
+
 body main .section-inactive{
     display: none;
 }
@@ -124,10 +128,12 @@ body main .section-inactive{
     font-size: 25px;
 }
 
-/* CSS SECTION ABOUT AS*/
+/* CSS SECTIONMONTAÑAS MAS ALTAS DE MEXICO */
 
 .section-montanasMexico{
-    padding: 0 50px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,22 +141,29 @@ body main .section-inactive{
 }
 
 .section-montanasMexico .more-details{
-    width: 900px;
+    width: 100%;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1.1fr;
-    gap: 90px;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
     list-style: none;
 }
 
-.section-montanasMexico .more-details li{
+.section-montanasMexico .more-details .container-MountainMexico{
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 5px;
+    place-items: center;
+}
+
+.section-montanasMexico .more-details .container-moreDetails{
     display: grid;
     grid-template-columns: 0.3fr 1fr;
     cursor: pointer;
     transition: border-color 2s;
     border: 2px solid transparent;
 }
-.section-montanasMexico .more-details li:hover{
+.section-montanasMexico .more-details .container-moreDetails:hover{
     border-color: #D6DBDF #AEB6BF #85929E #AEB6BF  ;
 }
 
@@ -191,7 +204,19 @@ body main .section-inactive{
     margin-left: 10px;
 }
 
+.section-montanasMexico .container-MountainMexico img.imagenMontainMexico{
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(128, 123, 123);
+    border-radius: 10px;
+    transition: width 0.5s, height 0.5s;
+    cursor: pointer;
+}
 
+.section-montanasMexico .container-MountainMexico img.imagenMontainMexico:hover{
+    width: 300px;
+    height: 300px;
+}
 /*SECTION TOURS */
 
 .section-montanasMundo {
