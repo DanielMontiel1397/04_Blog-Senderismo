@@ -164,33 +164,57 @@ body{
 }
 
 .section-tours .list_tours li{
-
-    margin: 10px;
+    width: 50px;
+    height: 400px;
+    border-radius: 20px;
+    border: 3px solid white;
+    margin: 5px;
 }
 
 .section-tours .list_tours li:nth-child(1){
-    background: url(./00_Imagenes/05_Everest.jpg);
-    background-size: cover;
-    width: 50px;
-    height: 300px;
+    background: url(./00_Imagenes/05_Everest.jpg); 
     cursor: pointer;
-    transition: width 2s;
+    transition: width 2s, height 2s;
 }
+
 .section-tours .list_tours li:nth-child(1).expander {
-    width: 300px;
+    width: 250px;
+    height: 400px ;
+    background-size: cover;
 }
 
 .section-tours .list_tours li:nth-child(2){
     background: url(./00_Imagenes/06_k2.jpg);
+    cursor: pointer;
+    transition: width 2s;
+}
+
+.section-tours .list_tours li:nth-child(2).expander {
+    width: 250px;
+    height: 400px ;
     background-size: cover;
 }
 
 .section-tours .list_tours li:nth-child(3){
     background: url(./00_Imagenes/07_Kanchenjunga.jpg);
-    background-size: cover;
+    cursor: pointer;
+    transition: width 2s;
+}
+
+.section-tours .list_tours li:nth-child(3).expander {
+    width: 250px;
+    height: 400px ;
+    background-size: cover; 
 }
 
 .section-tours .list_tours li:nth-child(4){
     background: url(./00_Imagenes/08_Lhotse.jpg);
+    cursor: pointer;
+    transition: width 2s;
+}
+
+.section-tours .list_tours li:nth-child(4).expander {
+    width: 250px;
+    height: 400px ;
     background-size: cover;
 }
