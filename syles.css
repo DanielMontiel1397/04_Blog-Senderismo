@@ -20,7 +20,7 @@ body{
 .encabezado-principal nav{
     display: flex;
     align-items: center;
-    width: 400px;
+    width: 600px;
 }
 
 .search{
@@ -56,11 +56,12 @@ body{
     display: flex;
     align-items: center;
     border-bottom: 2px solid transparent;
-    transition: border-color 1s;;
+    transition: border-color 1s, font-size 1s;
 }
 
 .encabezado-principal .menus li:hover{
     border-color: red;
+    font-size: 20px;
 }
 
 /* CSS SECTION MAIN */
