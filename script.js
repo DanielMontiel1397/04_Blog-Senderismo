@@ -13,6 +13,20 @@ const acercaDe2 = document.querySelector('.acercaDe2');
 const acercaDe3 = document.querySelector('.acercaDe3');
 const acercaDe4 = document.querySelector('.acercaDe4');
 
+const irSectionMain = document.querySelector('.irSectionMain');
+const irSectionMontanasMexico = document.querySelector('.irSectionMontanasMexico');
+const irSectionMontanasMundo = document.querySelector('.irSectionMontanasMundo');
+const irSectionGaleria = document.querySelector('.irSectionGaleria');
+const irSectionReview = document.querySelector('.irSectionReview');
+const irSectionContacto = document.querySelector('.irSectionContacto');
+
+const sectionMain = document.querySelector('.section-main');
+const sectionMontanasMexico = document.querySelector('.section-montanasMexico');
+const sectionMontanasMundo = document.querySelector('.section-montanasMundo');
+const sectionGaleria = document.querySelector('.section-galeria');
+const sectionReview = document.querySelector('.section-review');
+const sectionContacto = document.querySelector('.section-contacto');
+
 imagenEverest.addEventListener('click', expander1);
 imagenK2.addEventListener('click', expander2);
 imagenkachen.addEventListener('click', expander3);
@@ -22,6 +36,64 @@ acercaDe2.addEventListener('click', cambiarAcercaDe2);
 acercaDe3.addEventListener('click', cambiarAcercaDe3);
 acercaDe4.addEventListener('click', cambiarAcercaDe4);
 
+irSectionMain.addEventListener('click', aparecerMenu);
+irSectionMontanasMexico.addEventListener('click',aparecerMontanasMexico);
+irSectionMontanasMundo.addEventListener('click',aparecerMontanasMundo);
+irSectionGaleria.addEventListener('click',aparecerGaleria);
+irSectionReview.addEventListener('click',aparecerReview);
+irSectionContacto.addEventListener('click',aparecerContacto);
+
+//Funciones para apecer Secciones
+function aparecerMenu(){
+    sectionMain.classList.remove('section-inactive');
+    sectionMontanasMexico.classList.add('section-inactive');
+    sectionMontanasMundo.classList.add('section-inactive');
+    sectionGaleria.classList.add('section-inactive');
+    sectionReview.classList.add('section-inactive');
+    sectionContacto.classList.add('section-inactive');
+}
+
+function aparecerMontanasMexico(){
+    sectionMain.classList.add('section-inactive');
+    sectionMontanasMexico.classList.remove('section-inactive');
+    sectionMontanasMundo.classList.add('section-inactive');
+    sectionGaleria.classList.add('section-inactive');
+    sectionReview.classList.add('section-inactive');
+    sectionContacto.classList.add('section-inactive');
+}
+
+function aparecerMontanasMundo(){
+    sectionMain.classList.add('section-inactive');
+    sectionMontanasMexico.classList.add('section-inactive');
+    sectionMontanasMundo.classList.remove('section-inactive');
+    sectionGaleria.classList.add('section-inactive');
+    sectionReview.classList.add('section-inactive');
+    sectionContacto.classList.add('section-inactive');
+}
+
+function aparecerGaleria(){
+    sectionMain.classList.add('section-inactive');
+    sectionMontanasMexico.classList.add('section-inactive');
+    sectionMontanasMundo.classList.add('section-inactive');
+    sectionGaleria.classList.remove('section-inactive');
+    sectionReview.classList.add('section-inactive');
+    sectionContacto.classList.add('section-inactive');
+}
+
+function aparecerReview(){
+    sectionMain.classList.add('section-inactive');
+    sectionMontanasMexico.classList.add('section-inactive');
+    sectionMontanasMundo.classList.add('section-inactive');
+    sectionGaleria.classList.add('section-inactive');
+    sectionReview.classList.remove('section-inactive');
+    sectionContacto.classList.add('section-inactive');
+}
+
+function aparecerContacto(){
+
+}
+
+//Funciones para expander imagenes de section Montañas del Mundo
 function expander1(){
     const isExpander2Open= imagenK2.classList.contains('expander');
     const isExpander3Open= imagenkachen.classList.contains('expander');
@@ -101,6 +173,8 @@ function expander4(){
     imagenLhotse.classList.toggle('expander');
 }
 
+
+//Seccion para aparecer temas de la Seccion Main
 function cambiarAcercaDe1(){
     mountainTallMexico.classList.add('inactive');
     mountainTallWorld.classList.add('inactive');
