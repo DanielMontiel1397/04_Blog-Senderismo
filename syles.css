@@ -163,3 +163,34 @@ body{
     justify-content: center;
 }
 
+.section-tours .list_tours li{
+
+    margin: 10px;
+}
+
+.section-tours .list_tours li:nth-child(1){
+    background: url(./00_Imagenes/05_Everest.jpg);
+    background-size: cover;
+    width: 50px;
+    height: 300px;
+    cursor: pointer;
+    transition: width 2s;
+}
+.section-tours .list_tours li:nth-child(1).expander {
+    width: 300px;
+}
+
+.section-tours .list_tours li:nth-child(2){
+    background: url(./00_Imagenes/06_k2.jpg);
+    background-size: cover;
+}
+
+.section-tours .list_tours li:nth-child(3){
+    background: url(./00_Imagenes/07_Kanchenjunga.jpg);
+    background-size: cover;
+}
+
+.section-tours .list_tours li:nth-child(4){
+    background: url(./00_Imagenes/08_Lhotse.jpg);
+    background-size: cover;
+}
