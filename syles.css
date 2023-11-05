@@ -1,7 +1,7 @@
 body{
     width: 100%;
     margin: 0;
-    background-image: url('./00_Imagenes/00_Fondo.jpg');
+    background-image: url('./00_Imagenes/00_Fondo2.jpg');
     background-size: cover;
 }
 
@@ -27,9 +27,10 @@ body main .section-inactive{
 .encabezado-responsive{
     font-size: 1rem;
     border-radius: 20px;
-    border: 3px solid gray;
+    border: 3px solid rgb(184, 184, 32);
     padding: 5px;
     display: none;
+    color: white;
 }
 
 .encabezado-principal nav{
@@ -72,6 +73,7 @@ body main .section-inactive{
     align-items: center;
     border-bottom: 2px solid transparent;
     transition: border-color 1s, font-size 1s;
+    color: white;
 }
 
 .encabezado-principal .menus li:hover{
@@ -119,7 +121,7 @@ body main .section-inactive{
 .section-main{
     height: 300px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 10px;
     padding: 20px 20px 20px 50px;
     margin-bottom: 100px;
@@ -128,12 +130,13 @@ body main .section-inactive{
 .section-main .tittle-main{
     font-size: 40px;
     text-align: center;
-    color: rgb(92, 83, 83);
+    color: rgb(170, 170, 34);
     margin-bottom: 10px;
 }
 
 .section-main .tittle-parraf p{
     text-align: justify;
+    color: white;
 }
 
 /*CSS MONTAÑAS MÁS ALTAS DE MEXICO*/
@@ -144,7 +147,7 @@ body main .section-inactive{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
+    color: white;
 }
 
 .acercaDe{
@@ -160,13 +163,14 @@ body main .section-inactive{
 .acercaDe li{
     transition: font-size 0.5s;
     cursor: pointer;
+    color: rgb(51, 190, 51);
 }
 
 .acercaDe li:hover{
     font-size: 25px;
 }
 
-/* CSS SECTIONMONTAÑAS MAS ALTAS DE MEXICO */
+/* CSS SECTION MONTAÑAS MAS ALTAS DE MEXICO */
 
 .section-montanasMexico{
     box-sizing: border-box;
@@ -200,6 +204,7 @@ body main .section-inactive{
     cursor: pointer;
     transition: border-color 2s;
     border: 2px solid transparent;
+    color: wheat;
 }
 .section-montanasMexico .more-details .container-moreDetails:hover{
     border-color: #D6DBDF #AEB6BF #85929E #AEB6BF  ;
@@ -238,7 +243,7 @@ body main .section-inactive{
     align-items: center;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(65, 59, 59);
+    color: whitesmoke;
     margin-left: 10px;
 }
 
