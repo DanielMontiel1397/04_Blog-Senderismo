@@ -356,6 +356,19 @@ body main .section-inactive{
     .encabezado-responsive{
         display: block;
     }
+
+    .section-main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .section-main .tittle-parraf p{
+        color: white;
+    }
+
+    .listMountainMexico li{
+        color:white;
+    }
 }
 
 @media (min-width: 641px) {
