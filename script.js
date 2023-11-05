@@ -27,6 +27,9 @@ const sectionGaleria = document.querySelector('.section-galeria');
 const sectionReview = document.querySelector('.section-review');
 const sectionContacto = document.querySelector('.section-contacto');
 
+const iconMountain = document.querySelector('.icon-mountain');
+const openMenuResponsive = document.querySelector('.menuResponsive');
+
 imagenEverest.addEventListener('click', expander1);
 imagenK2.addEventListener('click', expander2);
 imagenkachen.addEventListener('click', expander3);
@@ -42,6 +45,8 @@ irSectionMontanasMundo.addEventListener('click',aparecerMontanasMundo);
 irSectionGaleria.addEventListener('click',aparecerGaleria);
 irSectionReview.addEventListener('click',aparecerReview);
 irSectionContacto.addEventListener('click',aparecerContacto);
+
+iconMountain.addEventListener('click', menuResponsive)
 
 //Funciones para apecer Secciones
 function aparecerMenu(){
@@ -90,7 +95,6 @@ function aparecerReview(){
 }
 
 function aparecerContacto(){
-
 }
 
 //Funciones para expander imagenes de section Montañas del Mundo
@@ -201,4 +205,10 @@ function cambiarAcercaDe4(){
     mountainTallWorld.classList.add('inactive');
     escaladoresMasGrandes.classList.remove('inactive');
     queEsSenderismo.classList.add('inactive');
+}
+
+//MENU RESPONSIVE
+
+function menuResponsive(){
+    openMenuResponsive.classList.toggle('inactive');
 }

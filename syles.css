@@ -3,7 +3,6 @@ body{
     margin: 0;
     background-image: url('./00_Imagenes/00_Fondo.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 main{
@@ -18,10 +17,19 @@ body main .section-inactive{
 .encabezado-principal{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
-    margin: 40px 40px 0 40px;
+    margin: 40px 20px 0 20px;
     height: 50px;
     border-bottom: 2px solid gray;
+}
+
+.encabezado-responsive{
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 3px solid gray;
+    padding: 5px;
+    display: none;
 }
 
 .encabezado-principal nav{
@@ -69,6 +77,36 @@ body main .section-inactive{
 .encabezado-principal .menus li:hover{
     border-color: red;
     font-size: 20px;
+}
+
+/*MENU RESPONSIVE */
+.menuResponsive {
+    position: absolute;
+    top: 92px;
+    left: 5px;
+    width: 90%;
+    background: white;
+    border: 3px solid gray;
+    border-radius: 80px 40px;
+    padding: 10px;
+}
+
+.menuResponsive ul{
+    list-style: none;
+    text-align: center;
+}
+
+.menuResponsive ul li{
+    color: rgb(124, 119, 119);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(173, 168, 168);
+    transition: font-size 0.5s;
+}
+
+.menuResponsive ul li:hover{
+    font-size: 50px;
 }
 
 /* CSS SECTION MAIN */
@@ -306,3 +344,22 @@ body main .section-inactive{
     height: 400px ;
     background-size: cover;
 }
+
+
+/*RESPONSIVE */
+
+@media (max-width: 640px){
+    .encabezado-principal nav{
+        display: none;
+    }
+
+    .encabezado-responsive{
+        display: block;
+    }
+}
+
+@media (min-width: 641px) {
+    .menuResponsive{
+        display: none;
+    }
+  }
