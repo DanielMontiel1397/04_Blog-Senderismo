@@ -217,11 +217,33 @@ body main .section-inactive{
     width: 300px;
     height: 300px;
 }
-/*SECTION TOURS */
+/*SECTION MONTAÑAS MÁS ALTAS DEL MUNDO*/
 
 .section-montanasMundo {
     text-align: center  ;
 }
+
+.section-montanasMundo h1{
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+@keyframes animate {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 
 .section-montanasMundo .list_tours{
     list-style: none;
